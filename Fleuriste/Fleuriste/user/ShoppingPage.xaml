@@ -1,0 +1,25 @@
+﻿<Page x:Class="BDD.User.ShoppingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BDD.User"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ShoppingPage">
+
+    <Grid Background="#FFB0DEC1">
+
+        <ListBox x:Name="MyList" Background="#FFB0DEC1" HorizontalContentAlignment="Stretch">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="20">
+                <TextBox HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Text="Veuillez choisir les articles que vous voulez ajouter à votre panier:" Width="260" Height="50" TextAlignment="Center" Background="#FFD8F5B1" BorderBrush="{x:Null}">
+                    <TextBox.Effect>
+                        <DropShadowEffect/>
+                    </TextBox.Effect>
+                </TextBox>
+            </Grid>
+
+        </ListBox>
+
+    </Grid>
+</Page>

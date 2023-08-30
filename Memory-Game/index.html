@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index</title>
+        <link rel='stylesheet' href='style.css'/>
+        <script src="memory.js"></script>
+    </head>
+    <body onload="init()">
+        <div class="content">
+            <div id="menu">
+                <fieldset>
+                    <legend><h3>Players</h3></legend>
+                    <div>
+                        <input type="text" id="player_name" class="player_name_text"/>
+                        <button class="add_player_button" onclick="addPlayer()">Add player</button>
+                    </div>
+                    <div id="players" class="players_list"></div>
+                </fieldset> 
+
+                <fieldset>
+                    <legend><h3>Field size</h3></legend>
+                    <div>
+                        <input type="radio" name="field_size" value="3,4" id="field_size_1"/>
+                        <label for="field_size_1">3x4</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="field_size" value="4,4" id="field_size_2"/>
+                        <label for="field_size_2">4x4</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="field_size" value="5,4" id="field_size_3"/>
+                        <label for="field_size_3">5x4</label>
+                    </div>
+                </fieldset> 
+
+                <fieldset>
+                    <legend><h3>Card set</h3></legend>
+                    <div>
+                        <input type="radio" name="card_set" value="cats" id="card_set_1"/>
+                        <label for="card_set_1">Cats</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="card_set" value="dogs" id="card_set_2"/>
+                        <label for="card_set_2">Dogs</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="card_set" value="dinosaurs" id="card_set_3"/>
+                        <label for="card_set_3">Dinosaurs</label>
+                    </div>
+                </fieldset> 
+
+                <button class="start_game_button" onclick="startGame()">Start game</button>
+            </div>
+            <div id="gameplay">
+                <button onclick="showMenu()">Quit</button>
+                <fieldset>
+                    <legend><h4>Field</h4></legend>
+                    <div class="cards_area" id="cards_area"></div>
+                </fieldset>
+                <fieldset>
+                    <legend><h4>Informations</h4></legend>
+                    <div class="turn_info_div">
+                        <div class="turn_info_pre">Turn</div>
+                        <div class="turn_info" id="turn_info"></div>
+                    </div>
+                    <div id="score_info"></div>
+                </fieldset>
+            </div>
+        </div>
+    </body>
+</html>

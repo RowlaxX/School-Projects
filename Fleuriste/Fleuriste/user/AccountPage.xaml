@@ -1,0 +1,50 @@
+﻿<Page x:Class="BDD.User.AccountPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BDD.User"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AccountPage">
+
+    <Grid Background="#FFB0DEC1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <TextBlock Grid.Row="0"  x:Name="LeText" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="33" Width="398" FontFamily="Bahnschrift SemiBold" FontSize="14" Foreground="Black" Background="#FFD8F5B1" TextAlignment="Center">
+                <TextBlock.Effect>
+                    <DropShadowEffect/>
+                </TextBlock.Effect><Run Text="Bienvenue dans votre espace client! "/><LineBreak/><Run Text="Vous pouvez modifier vos informations ici"/></TextBlock>
+        </Grid>
+        <Grid Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0,0,10,0"><Run Text="N"/><Run Language="fr-fr" Text="om"/></TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0,0,10,0"><Run Language="fr-fr" Text="Prénom"/></TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0,0,10,0"><Run Language="fr-fr" Text="Téléphone"/></TextBlock>
+            <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0,0,10,0"><Run Language="fr-fr" Text="E-mail"/></TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0,0,10,0"><Run Language="fr-fr" Text="Password"/></TextBlock>
+
+            <TextBox x:Name="EditName" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,5,10,5" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="EditFirstName" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,5,10,5" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="EditPhone" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,5,10,5" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="EditEmail" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,5,10,5" VerticalContentAlignment="Center"/>
+            <Button x:Name="EditPassword" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="Modifier" Margin="25,5,25,5"/>
+        </Grid>
+    </Grid>
+</Page>

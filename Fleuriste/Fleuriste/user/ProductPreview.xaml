@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="BDD.User.ProductPreview"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BDD.User"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Height="150">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="1"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="Black" Grid.Column="1"/>
+        <Grid Background="Black" Grid.Column="3"/>
+        <Grid Background="Black" Grid.Column="5"/>
+        <Grid Background="Black" Grid.Column="7"/>
+
+        <Grid Grid.Column="0">
+            <Grid Margin="5" x:Name="IMG"/>
+        </Grid>
+
+        <TextBlock Grid.Column="2" x:Name="ProductName" FontSize="20" TextAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <TextBox IsEnabled="False" Grid.Column="4" x:Name="ProductDescription" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5" Height="60"/>
+        <TextBlock Grid.Column="6" x:Name="ProductPrice" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Stretch" TextAlignment="Center" Margin="10"/>
+    </Grid>
+</UserControl>
